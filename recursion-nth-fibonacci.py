@@ -5,11 +5,11 @@ def getNthFib(n):
 
 	if n == 1:
 		return defaultArray[0]
-	else:
-		count = 3
-		while count <= n:
-			sum = defaultArray[0] + defaultArray[1]
-			defaultArray[0] = defaultArray[1]
-			defaultArray[1] = sum
-			count = count + 1
-		return defaultArray[1]
+
+	count = 3
+	while count <= n:
+		sum = defaultArray[0] + defaultArray[1]
+		defaultArray[0] = defaultArray[1]
+		defaultArray[1] = sum
+		count = count + 1
+	return defaultArray[1]
